@@ -16,11 +16,22 @@ import TabelaProdutos from './components/repeticao/TabelaProdutos'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
 
+import DiretaPai from './components/comunicacao/DiretaPai'
+import IndiretaPai from './components/comunicacao/IndiretaPai'
+
 export default () =>
     <div className="app">
         <h1>Fundamentos react</h1>
 
         <div className="cards-container">
+            <Card titulo="#10 Comunicação direta" color="#8BAD39">
+                <IndiretaPai></IndiretaPai>
+            </Card>
+
+            <Card titulo="#09 Comunicação direta" color="#59323C">
+                <DiretaPai></DiretaPai>
+            </Card>
+
             <Card titulo="#08 Renderização condicional" color="#3A9AD9">
                 <ParOuImpar numero={20}></ParOuImpar>
                 <UsuarioInfo usuario={{ nome: "Fernando" }}></UsuarioInfo>
