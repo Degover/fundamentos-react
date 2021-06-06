@@ -19,11 +19,22 @@ import UsuarioInfo from './components/condicional/UsuarioInfo'
 import DiretaPai from './components/comunicacao/DiretaPai'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
 
+import Input from './components/formulario/Input'
+import Contador from './components/contador/Contador'
+
 export default () =>
     <div className="app">
         <h1>Fundamentos react</h1>
 
         <div className="cards-container">
+            <Card titulo="#12 Contador" color="#556">
+                <Contador numeroInicial={10} ></Contador>
+            </Card>
+
+            <Card titulo="#11 Componente controlado(Input)" color="#8B1D39">
+                <Input></Input>
+            </Card>
+
             <Card titulo="#10 Comunicação direta" color="#8BAD39">
                 <IndiretaPai></IndiretaPai>
             </Card>
