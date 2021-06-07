@@ -1,0 +1,29 @@
+.mega .display {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mega .display div {
+    margin: 0 .5em;
+}
+
+.mega .botao-gerador button {
+    font-size: 1.4rem;
+    margin: .3em 0;
+    padding: .4em 1em;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.mega .botao-gerador button:hover {
+    background-color: rgb(89, 11, 161);
+    cursor: pointer;
+}
+
+.mega .botao-gerador button:active {
+    background-color: rgb(107, 26, 184);
+}
+

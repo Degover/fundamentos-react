@@ -22,11 +22,17 @@ import IndiretaPai from './components/comunicacao/IndiretaPai'
 import Input from './components/formulario/Input'
 import Contador from './components/contador/Contador'
 
+import Mega from './components/mega/Mega'
+
 export default () =>
     <div className="app">
         <h1>Fundamentos react</h1>
 
         <div className="cards-container">
+            <Card titulo="#13 Desafio Megasena" color="#576aa8">
+                <Mega/>
+            </Card>
+
             <Card titulo="#12 Contador" color="#556">
                 <Contador numeroInicial={10} ></Contador>
             </Card>
