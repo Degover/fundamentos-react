@@ -8,6 +8,7 @@ var InputQuantidade = props => {
 
     return (
         <div className="input">
+            <label>Quantidade de números: </label>
             <input value={props.quantidade} onChange={onChange} type="number"/>
         </div>
     )

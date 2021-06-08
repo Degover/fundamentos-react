@@ -7,7 +7,7 @@ var BotaoGerador = props => {
 
         let finalArray = [];
         for(let i = 0; i < qtNumeros; i++) {
-            let randomNum = Math.ceil(Math.random() * (maxNumber - minNumber) + minNumber);
+            let randomNum = Math.ceil(Math.random() * (maxNumber + 1 - minNumber) + minNumber);
 
             while(finalArray.indexOf(randomNum) >= 0) {
                 randomNum++;
@@ -19,7 +19,7 @@ var BotaoGerador = props => {
             maxNumber--;
         }
 
-        return finalArray;
+        return finalArray.sort((n1, n2) => n1 - n2);
     }
 
     const onClick = () => {

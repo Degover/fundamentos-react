@@ -8,7 +8,7 @@ import InputQuantidade from './InputQuantidade'
 
 var Mega = props => {
     const [quantidade, setQuantidade] = useState(6);
-    const [sorteados, setSorteados] = useState([0,0,0,0,0,0]);
+    const [sorteados, setSorteados] = useState(Array(6).fill(0));
 
     return (
         <div className="mega">
